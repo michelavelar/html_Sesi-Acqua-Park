@@ -116,6 +116,28 @@ body {
 .navegacao-portais .midias-sociais.flickr a:hover {
     background-color: #0062DD;
 }
+
+// CARROSEL
+.tns-controls [disabled] { 
+    color: #999999;
+    background: #B3B3B3; 
+    cursor: not-allowed !important;
+  }
+  .tns-nav {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 0;
+  }
+  .tns-nav > .tns-nav-active { background: #999; }
+
 // RESPONSIVO 
 @media(min-width: 767px){
     #navegacao{
@@ -217,5 +239,3 @@ body {
     bottom: -210px;
     left: 0px;    
 }
-
-    
