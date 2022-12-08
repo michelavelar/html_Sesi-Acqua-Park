@@ -5,16 +5,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #066EC7;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-red: #E74150;
+  --bs-orange: #EF9F3B;
   --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-green: #27B3A7;
   --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
+  --bs-cyan: #27AAF2;
   --bs-black: #000;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -28,27 +28,27 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
+  --bs-primary: #066EC7;
   --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --bs-success: #27B3A7;
+  --bs-info: #27AAF2;
+  --bs-warning: #EF9F3B;
+  --bs-danger: #E74150;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 6, 110, 199;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-success-rgb: 39, 179, 167;
+  --bs-info-rgb: 39, 170, 242;
+  --bs-warning-rgb: 239, 159, 59;
+  --bs-danger-rgb: 231, 65, 80;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Mitr", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -67,8 +67,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-color: #066EC7;
+  --bs-link-hover-color: #05589f;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -4120,5 +4120,3 @@
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap-grid.css.map */

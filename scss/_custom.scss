@@ -1,0 +1,221 @@
+// FONT 
+// font-family: 'Mitr', sans-serif;
+html {
+    font-family: 'Mitr', sans-serif !important;
+}
+
+body {
+    margin-top: 125px;
+}
+
+/* NAGEGACAO */
+#navegacao{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: fixed;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    line-height: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#navegacao a {
+    -webkit-transition: all ease .25s;
+    -moz-transition: all ease .25s;
+    transition: all ease .25s;
+}
+#navegacao > div {
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.navegacao-portais {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top:0;
+    z-index: 9999;
+    background-color: $red;
+}
+.navegacao-portais .container{
+   margin-right: auto;
+   margin-left: auto;
+   }
+ .navegacao-portais.fiesp .container { width: 960px }
+ 
+ .navegacao-portais.sesi .container { width: 960px }
+ 
+ .navegacao-portais.senai {background-color: #006699;}
+ .navegacao-portais.senai .container { width: 1004px }
+.navegacao-portais ul {
+    margin: 0;
+    padding: 0;
+    display: inline-table;
+    list-style: none;
+    float: right !important;
+}
+.navegacao-portais ul li {
+    display: inline-table;
+    text-transform: uppercase;
+    margin: 0 7px 0 0 ;
+}
+.navegacao-portais ul li a {
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none;
+    font-size: 13px; 
+}
+.navegacao-portais ul li a.fa {
+    margin: 0;
+   padding: 7px 0 8px;
+    font-size: 15px;
+   width: 27px
+}
+.navegacao-portais ul li a:hover, .navegacao-portais ul li a:active, .navegacao-portais ul li a:focus {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+.navegacao-portais ul li.midias-sociais strong {display: none }
+.navegacao-portais ul li.midias-sociais{
+    margin: 0 !important;
+    padding: 0;
+    text-align: center;
+    font-weight: normal !important;
+    border-left: 1px solid rgba(255, 255, 255, .6);
+    background: none;
+}
+.navegacao-portais ul li.midias-sociais:last-child { border-right:1px solid rgba(255, 255, 255, .6) }
+.navegacao-portais ul li.midias-sociais a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background: transparent;
+}
+.navegacao-portais .midias-sociais.facebook a:hover {
+    background-color: #3B5998;
+}
+.navegacao-portais .midias-sociais.twitter a:hover {
+    background-color: #5EA9DD;
+}
+.navegacao-portais .midias-sociais.youtube a:hover {
+   color: #D22827 !important;
+    background-color: #fff;
+}
+.navegacao-portais .midias-sociais.linkedin a:hover {
+    background-color: #0177B5;
+}
+.navegacao-portais .midias-sociais.instagram a:hover {
+    background: #cc2366;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.navegacao-portais .midias-sociais.slideshare a:hover {
+    background-color: #00A7A9;
+}
+.navegacao-portais .midias-sociais.flickr a:hover {
+    background-color: #0062DD;
+}
+// RESPONSIVO 
+@media(min-width: 767px){
+    #navegacao{
+        font-size: 13px !important;
+        font-weight: 600;
+   }
+    .navegacao-portais ul li {
+        margin: 0 20px 0 0 ;
+        height: 100%
+   }
+    .navegacao-portais ul li a.fa {
+       width: 50px;
+       height: 100%
+    }
+}
+
+
+/* LOGO */
+.logo-AcquaPark{
+    position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  // Use the .carousel-control's width as margin so we don't overlay those
+  margin-right: $carousel-control-width;
+  margin-top: 7rem;
+  margin-left: $carousel-control-width;
+  list-style: none;
+}
+
+
+
+/* BACK TO TOP BUTTON */
+#scroll-top {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    text-decoration: none;
+    z-index: 999999;
+  }
+  #scroll-top button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    border: solid 5px #FFEBEE50;
+    background-color: #2094A2;
+    color: #fff;
+    box-shadow: 0 0 1px #333;
+    display: block;
+    font-family: tahoma;
+    font-size: 11px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+  
+  #scroll-top button:hover {
+    background-color: #EC792750;
+    border: solid 5px #FFEBEE50;
+  }
+          
+
+  /* PARQUE */
+
+#parque {
+    padding: 60px 0 90px;
+    text-align: center;
+    color: $white;
+    background: $primary;    
+    background: -moz-linear-gradient(180deg, $primary 0%, $blue-700 100%);
+    background: -webkit-linear-gradient(180deg, $primary 0%, $blue-700 100%);
+    background: linear-gradient(180deg, $primary 0%, $blue-700 100%);
+  }
+
+  .ondas{
+    display: inline-block;
+    position: relative;
+  }
+
+  .ondas::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    background-image: url("/dist/images/ondas.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+    bottom: -210px;
+    left: 0px;    
+}
+
+    
