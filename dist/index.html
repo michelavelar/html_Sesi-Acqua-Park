@@ -71,6 +71,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet" type="text/css">
   <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 
+  <!-- flatpickr v4 Styles -->
+  <link href="/dist/css/flatpickr.min.css" rel="stylesheet">
+  <link href="/res/css/flatpickr_fiesp_red.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -204,12 +208,22 @@
 
 
     <section id="calendario" class="bg-primary py-5">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col text-center text-white " style="height: 500px; ">
-            <h2 class="text-uppercase">Calendário</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            
+            <div class="col text-center text-white">
+              <h2 class="text-uppercase">Calendário</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div id="flatpicker-calendario"></div>
+            </div>
+            <div class="col-md-8">
+              <div id="eventosSesi" class="p-3 mt-4 mt-md-0 text-white overflow-auto rounded" style="background-color: #034798; max-height: 300px;">
+                <!-- Concatenados aqui! -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -226,10 +240,36 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous">
   </script>
 
+  <!-- JQuery JavaScript -->
+  <script src="/dist/js/jquery-3.6.1.min.js"></script>
+  
   <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script src="js/retina.js" type="text/javascript"></script>
   <script src="js/custom.js"></script>
   <script>dataAno();</script>
+
+  <!-- flatpickr JavaScript -->
+  <script src="/dist/js/flatpickr.js"></script>
+  <script src="/dist/js/flatpickr-pt.js"></script>
+  
+  <!-- Custom flatpickr JavaScript -->
+  <script src="/res/js/custom_flatpickr.js"></script>
+
+  <script>
+    $("#eventosSesi").hide();
+
+    // ADICIONAR DATAS AO CALENDÁRIO
+    addData("2022-12-13", "JARDIM SENSORIAL", "Viva a tranquilidade e experiência do bem estar com a natureza.");
+    addData("2022-12-14", "teste2", "teste2");
+    addData("2022-12-13", "teste3", "teste3");
+    addData("15/12/2022", "teste4", "teste4");
+    addData("13/12/2022", "teste13", "teste13");
+    addData("01/01/2023", "teste15", "teste15");
+    addData("13/12/2022", "teste16", "teste16");
+    addData("13/12/2022", "teste17", "teste17");
+
+    criarCalendario();
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
