@@ -1,5 +1,11 @@
 var eventoSesiDiv = $("#eventosSesi");
 var datas = [];
+function getLastDayOfNextMonth() {
+    var d = new Date();
+    d.setMonth(d.getMonth() + 1, 1);
+    var lastDayOfMonth = new Date(d.getFullYear(), d.getMonth() + 1, 0);
+    return lastDayOfMonth;
+}
 function addData(data, titulo, subtitulo) {
     // DATAS
     if (data.indexOf("-") !== -1) {
@@ -31,7 +37,7 @@ function criarCalendario() {
         inline: true,
         locale: "pt",
         minDate: "today",
-        maxDate: "2023-01-31",
+        maxDate: getLastDayOfNextMonth(),
         enable: datas,
         onChange: function (dateObj, dateStr) {
             if (eventoSesiDiv.is(":hidden"))
@@ -45,4 +51,3 @@ function criarCalendario() {
         }
     });
 }
-//# sourceMappingURL=custom_flatpickr.js.map
