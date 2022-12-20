@@ -24,24 +24,24 @@ function addData(data, titulo, subtitulo) {
         var dataArr2 = dataArr[0].split("/");
         data = dataArr2[2] + "-" + dataArr2[1] + "-" + dataArr2[0];
         datas.push(data);
-        /// SE TEM "-"
-        /// TRANSFORMA EX. "20-12-2022" PARA "2022-12-20", CASO NECESSÁRIO
     }
+    /// SE TEM "-"
+    /// TRANSFORMA EX. "20-12-2022" PARA "2022-12-20", CASO NECESSÁRIO
     else if (data.indexOf("-") !== -1) {
         var dataSplit = data.split("-");
         if (dataSplit[0].length !== 4)
             data = dataSplit[2] + "-" + dataSplit[1] + "-" + dataSplit[0];
         datas.push(data);
-        /// SE TEM "/"
-        /// TRANSFORMA EX. "20/12/2022" PARA "2022-12-20"
     }
+    /// SE TEM "/"
+    /// TRANSFORMA EX. "20/12/2022" PARA "2022-12-20"
     else if (data.indexOf("/") !== -1) {
         var dataArr = data.split("/");
         data = dataArr[2] + "-" + dataArr[1] + "-" + dataArr[0];
         datas.push(data);
-        /// SE SÓ TEM NÚMERO - É UM UNIX TIMESTAMP
-        /// TRANSFORMA EX. "1671569063" PARA "2022-12-20"
     }
+    /// SE SÓ TEM NÚMERO - É UM UNIX TIMESTAMP
+    /// TRANSFORMA EX. "1671569063" PARA "2022-12-20"
     else if (data.match(/^-?\d+$/)) {
         var dataCerta = new Date(parseInt(data, 10) * 1000);
         data = dataCerta.getFullYear() + "-" + ("0" + (dataCerta.getMonth() + 1)).slice(-2) + "-" + ("0" + dataCerta.getDate()).slice(-2);
