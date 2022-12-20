@@ -43,7 +43,7 @@ function addData(data, titulo, subtitulo) {
         /// TRANSFORMA EX. "1671569063" PARA "2022-12-20"
     }
     else if (data.match(/^-?\d+$/)) {
-        var dataCerta = new Date(parseInt(data, 10));
+        var dataCerta = new Date(parseInt(data, 10) * 1000);
         data = dataCerta.getFullYear() + "-" + ("0" + (dataCerta.getMonth() + 1)).slice(-2) + "-" + ("0" + dataCerta.getDate()).slice(-2);
         datas.push(data);
     }
