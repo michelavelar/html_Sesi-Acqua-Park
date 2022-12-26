@@ -6690,7 +6690,9 @@ body {
   width: 27px;
 }
 
-.navegacao-portais ul li a:hover, .navegacao-portais ul li a:active, .navegacao-portais ul li a:focus {
+.navegacao-portais ul li a:hover,
+.navegacao-portais ul li a:active,
+.navegacao-portais ul li a:focus {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
@@ -6750,6 +6752,68 @@ body {
   background-color: #0062DD;
 }
 
+/* HEADER */
+.logo-acqua-park {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  min-height: 210px;
+  padding-left: 20px;
+  top: 140px;
+  left: 0;
+  z-index: 999;
+}
+
+.logo-acqua-park img {
+  width: 25vw;
+}
+
+.cat-sesi {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  min-height: auto;
+  top: 126px;
+  right: 0;
+  z-index: 999;
+}
+
+.cat-sesi img {
+  width: 40vw;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+  .logo-acqua-park img {
+    width: auto;
+  }
+  .cat-sesi img {
+    width: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .logo-acqua-park {
+    width: 1320px;
+    padding-left: 0px;
+    margin-left: calc(50% - 660px);
+  }
+}
+/* CARROSEL */
+.carousel-inner::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  min-height: 70px;
+  background-color: transparent;
+  background-image: url("/dist/images/onda.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -1px;
+  left: 0px;
+}
+
 .tns-controls [disabled] {
   color: #999999;
   background: #B3B3B3;
@@ -6789,23 +6853,6 @@ body {
     height: 100%;
   }
 }
-/* LOGO */
-.logo-AcquaPark {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  width: fit-content;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-top: 7rem;
-  margin-left: 15%;
-  list-style: none;
-}
-
 /* BACK TO TOP BUTTON */
 #scroll-top {
   position: fixed;
@@ -6869,6 +6916,15 @@ body {
   bottom: -210px;
   left: 0px;
 }
+
+/* SOBRE */
+#sobre {
+  padding: 210px 0 80px;
+  color: #fff;
+  background: transparent linear-gradient(180deg, #25C7BA 0%, #1A9CAD 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
 
 .clearfix::after {
   display: block;
