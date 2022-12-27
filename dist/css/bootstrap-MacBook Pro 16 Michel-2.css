@@ -6986,20 +6986,19 @@ body {
   background-color: #F7F7F7;
 }
 
-.onda::after {
+.onda::before {
   content: "";
+  position: absolute;
   display: inline-block;
   width: 100%;
   min-height: 70px;
   background-color: transparent;
   background-image: url("/dist/images/onda.svg");
-  filter: invert(11%) sepia(100%) saturate(5547%) hue-rotate(10deg) brightness(86%) contrast(119%);
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
-  top: 20px;
+  bottom: -1px;
   left: 0px;
-  z-index: 999;
 }
 
 #mapa-cat ol,
@@ -7018,32 +7017,21 @@ body {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-size: 1.5rem;
-  line-height: 3rem;
-  width: 2rem;
-  height: 2rem;
-  padding: 0 0.75rem;
-  margin: 0 20px 0 0;
+  line-height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.45rem;
   text-align: left;
   color: #fff;
-  background-color: #495057;
+  background-color: purple;
   border-radius: 1em;
 }
 
-#mapa-cat .column {
-  column-count: 1;
+.column {
+  column-count: 3;
   column-gap: 40px;
 }
 
-@media (min-width: 767px) {
-  #mapa-cat .column {
-    column-count: 2;
-  }
-}
-@media (min-width: 992px) {
-  #mapa-cat .column {
-    column-count: 3;
-  }
-}
 .clearfix::after {
   display: block;
   clear: both;
