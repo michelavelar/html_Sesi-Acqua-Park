@@ -1351,7 +1351,7 @@
   width: 2rem;
   height: 2rem;
   background-color: #212529;
-  border-radius: 0.375rem;
+  border-radius: 1rem;
 }
 
 .bd-example-position-examples::after {
@@ -1410,7 +1410,7 @@
   .bd-code-snippet {
     margin-right: 0;
     margin-left: 0;
-    border-radius: 0.375rem;
+    border-radius: 1rem;
   }
 }
 

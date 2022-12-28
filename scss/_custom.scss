@@ -325,7 +325,7 @@ body {
 }
 
 .ondas {
-    display: inline-block;
+    // display: inline-block;
     position: relative;
 }
 
@@ -368,6 +368,7 @@ body {
 #mapa-cat {
     padding: 100px 0;
     text-align: center;
+    color: $gray-600;
     background-color: #F7F7F7;
 }
 
@@ -417,7 +418,7 @@ body {
     margin: 0 20px 0 0;
     text-align: left;
     color: $white;
-    background-color: $gray-700;
+    background-color: $gray-600;
     border-radius: 1em;
 }
 
@@ -540,12 +541,25 @@ body {
     left: 0;
 }
 
-/* CAREIRINHA */
-#careirinha {
+/* carteirinha */
+#carteirinha {
     padding: 90px 0;
     background: #F4D400;
     background: -moz-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
     background: -webkit-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
     background: linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    color: $white;
+}
+
+
+/* DAY-USE */
+#day-use {
+    padding: 200px 0 80px;
+    text-align: center;
+    color: $gray-600;
+    background-color: #f7f7f7;
+}
+
+#day-use .btn {
     color: $white;
 }
