@@ -324,12 +324,12 @@ body {
     background: linear-gradient(180deg, $primary 0%, $blue-700 50%);
 }
 
-.ondas {
+#parque.ondas {
     // display: inline-block;
     position: relative;
 }
 
-.ondas::before {
+#parque.ondas::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -521,7 +521,23 @@ body {
     
 }
 
-#calendario.onda::before {
+
+
+/* carteirinha */
+#carteirinha {
+    padding: 90px 0;
+    background: #F4D400;
+    background: -moz-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    background: -webkit-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    background: linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    color: $white;
+}
+
+#carteirinha.onda {
+    position: relative;
+}
+
+#carteirinha.onda::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -537,18 +553,8 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: -40px;
+    top: -2px;
     left: 0;
-}
-
-/* carteirinha */
-#carteirinha {
-    padding: 90px 0;
-    background: #F4D400;
-    background: -moz-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
-    background: -webkit-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
-    background: linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
-    color: $white;
 }
 
 
@@ -560,6 +566,67 @@ body {
     background-color: #f7f7f7;
 }
 
-#day-use .btn {
+.btn {
     color: $white;
+}
+
+.btn-secondary {
+    color:$primary
+}
+#day-use.ondas {
+    // display: inline-block;
+    position: relative;
+}
+
+#day-use.ondas::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    background-image: url("/dist/images/ondas.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -100px;
+    left: 0px;
+}
+
+
+
+
+
+/* CONTATO */
+
+#contato {
+    padding: 60px 0;
+    background-color: $primary;
+    color: $white;
+
+}
+
+#contato.onda {
+    position: relative;
+}
+
+#contato.onda::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("/dist/images/onda-azul.svg");
+    // filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -40px;
+    left: 0;
+    
 }
