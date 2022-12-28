@@ -8,7 +8,7 @@
   --#{$prefix}btn-padding-y: #{$btn-padding-y};
   --#{$prefix}btn-font-family: #{$btn-font-family};
   @include rfs($btn-font-size, --#{$prefix}btn-font-size);
-  --#{$prefix}btn-font-weight: #{$btn-font-weight};
+  --#{$prefix}btn-font-weight: #{$font-weight-semibold};  
   --#{$prefix}btn-line-height: #{$btn-line-height};
   --#{$prefix}btn-color: #{$body-color};
   --#{$prefix}btn-bg: transparent;
@@ -30,6 +30,7 @@
   color: var(--#{$prefix}btn-color);
   text-align: center;
   text-decoration: if($link-decoration == none, null, none);
+  text-transform: uppercase;
   white-space: $btn-white-space;
   vertical-align: middle;
   cursor: if($enable-button-pointers, pointer, null);
@@ -145,7 +146,7 @@
   }
 }
 
-@each $color, $value in $theme-colors {
+@each $color, $value in $theme-colors { 
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
   }
@@ -159,7 +160,7 @@
 
 // Make a button look and behave like a link
 .btn-link {
-  --#{$prefix}btn-font-weight: #{$font-weight-normal};
+  --#{$prefix}btn-font-weight: #{$font-weight-semibold};
   --#{$prefix}btn-color: #{$btn-link-color};
   --#{$prefix}btn-bg: transparent;
   --#{$prefix}btn-border-color: transparent;

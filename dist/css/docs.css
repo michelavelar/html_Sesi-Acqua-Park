@@ -1655,7 +1655,7 @@
 
 .swatch-yellow {
   color: #000;
-  background-color: #ffc107;
+  background-color: #F4D400;
 }
 .swatch-yellow::after {
   position: absolute;
@@ -1665,8 +1665,8 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "12.8" "\a" "1.63" "\a" "12.8";
-  background-color: #ffc107;
+  content: "14.2" "\a" "1.47" "\a" "14.2";
+  background-color: #F4D400;
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2096,47 +2096,47 @@
 
 .bd-yellow-100 {
   color: #000;
-  background-color: #fff3cd;
+  background-color: #fdf6cc;
 }
 
 .bd-yellow-200 {
   color: #000;
-  background-color: #ffe69c;
+  background-color: #fbee99;
 }
 
 .bd-yellow-300 {
   color: #000;
-  background-color: #ffda6a;
+  background-color: #f8e566;
 }
 
 .bd-yellow-400 {
   color: #000;
-  background-color: #ffcd39;
+  background-color: #f6dd33;
 }
 
 .bd-yellow-500 {
   color: #000;
-  background-color: #ffc107;
+  background-color: #F4D400;
 }
 
 .bd-yellow-600 {
   color: #000;
-  background-color: #cc9a06;
+  background-color: #c3aa00;
 }
 
 .bd-yellow-700 {
   color: #000;
-  background-color: #997404;
+  background-color: #927f00;
 }
 
 .bd-yellow-800 {
   color: #fff;
-  background-color: #664d03;
+  background-color: #625500;
 }
 
 .bd-yellow-900 {
   color: #fff;
-  background-color: #332701;
+  background-color: #312a00;
 }
 
 .bd-green-100 {

@@ -42,7 +42,7 @@ $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #E74150 !default;
 $orange:  #EF9F3B !default;
-$yellow:  #ffc107 !default;
+$yellow:  #F4D400 !default;
 $green:   #27B3A7 !default;
 $teal:    #20c997 !default;
 $cyan:    #27AAF2 !default;
@@ -299,7 +299,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $yellow !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $orange !default;
@@ -590,7 +590,7 @@ $font-sizes: (
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+$headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables

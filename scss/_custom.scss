@@ -8,6 +8,8 @@ body {
     margin-top: 125px;
 }
 
+
+
 /* NAGEGACAO */
 #navegacao {
     margin: 0;
@@ -211,7 +213,7 @@ body {
 // transform: scaleY(-1);
 
 /* CARROSEL */
-.carousel-inner::after {
+#carouselAcquaParkIndicators .onda::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -221,10 +223,13 @@ body {
     background-image: url("/dist/images/onda.svg");
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     bottom: -1px;
     left: 0px;
+    filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
 }
+
+
 
 
 .tns-controls [disabled] {
@@ -314,9 +319,9 @@ body {
     text-align: center;
     color: $white;
     background: $primary;
-    background: -moz-linear-gradient(180deg, $primary 0%, $blue-700 100%);
-    background: -webkit-linear-gradient(180deg, $primary 0%, $blue-700 100%);
-    background: linear-gradient(180deg, $primary 0%, $blue-700 100%);
+    background: -moz-linear-gradient(180deg, $primary 0%, $blue-700 50%);
+    background: -webkit-linear-gradient(180deg, $primary 0%, $blue-700 50%);
+    background: linear-gradient(180deg, $primary 0%, $blue-700 50%);
 }
 
 .ondas {
@@ -331,7 +336,7 @@ body {
     width: 100%;
     height: 300px;
     background-color: transparent;
-    background-image: url("/dist/images/ondas.svg");    
+    background-image: url("/dist/images/ondas.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -342,9 +347,11 @@ body {
 /* SOBRE */
 
 #sobre {
-    padding: 210px 0 80px;
+    padding: 210px 0 100px;
     color: $white;
-    background: transparent linear-gradient(180deg, #25C7BA 0%, #1A9CAD 100%) 0% 0% no-repeat padding-box;
+    background: -moz-linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
+    background: -webkit-linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
+    background: linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
 }
 
 .box {
@@ -356,29 +363,36 @@ body {
 }
 
 
+/* MAPA */
+
 #mapa-cat {
     padding: 100px 0;
     text-align: center;
     background-color: #F7F7F7;
 }
 
-.onda::after {
+#mapa-cat.onda {
+    position: relative;
+}
+
+#mapa-cat.onda::after {
     content: "";
-    // position: absolute;
+    position: absolute;
     display: inline-block;
     width: 100%;
     min-height: 70px;
     background-color: transparent;
     background-image: url("/dist/images/onda.svg");
-    filter: invert(11%) sepia(100%) saturate(5547%) hue-rotate(10deg) brightness(86%) contrast(119%);
+    filter: invert(100%) sepia(11%) saturate(21%) hue-rotate(359deg) brightness(116%) contrast(94%);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    top: 20px;
-    left: 0px;
-    z-index: 999;
+    background-size: cover;
+    top: -40px;
+    left: 0;
     
 }
+
+
 
 #mapa-cat ol,
 #mapa-cat ul {
@@ -422,4 +436,116 @@ body {
     #mapa-cat .column {
         column-count: 3;
     }
+}
+
+
+/* CURTA O SESI ACQUA PARTK */
+
+#curta {
+    padding: 60px 0;
+    color: $white;
+    text-align: center;
+    background: transparent linear-gradient(180deg, #25C7BA 0%, #1A9CAD 100%) 0% 0% no-repeat padding-box;
+}
+
+#curta.onda {
+    position: relative;
+}
+
+#curta.onda::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("/dist/images/onda.svg");
+    filter: invert(61%) sepia(66%) saturate(474%) hue-rotate(126deg) brightness(94%) contrast(90%);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -40px;
+    left: 0;
+    
+}
+
+.my-slider-2 {
+    text-align: left;
+}
+
+.my-slider-2 div {
+    width: 300px;
+}
+
+@media(min-width: 767px) {
+    .my-slider-2 div {
+        width: 480px;
+    }
+}
+
+
+/* CALENDARIO */
+
+#calendario {
+    padding: 60px 0;
+    background-color: $primary;
+    color: $white;
+
+}
+
+#calendario.onda {
+    position: relative;
+}
+
+#calendario.onda::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("/dist/images/onda.svg");
+    filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -40px;
+    left: 0;
+    
+}
+
+#calendario.onda::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("/dist/images/onda.svg");
+    filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -40px;
+    left: 0;
+}
+
+/* CAREIRINHA */
+#careirinha {
+    padding: 90px 0;
+    background: #F4D400;
+    background: -moz-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    background: -webkit-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    background: linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
+    color: $white;
 }
