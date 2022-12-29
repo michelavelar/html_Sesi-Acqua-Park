@@ -9,7 +9,6 @@ body {
 }
 
 
-
 /* NAGEGACAO */
 #navegacao {
     margin: 0;
@@ -223,10 +222,17 @@ body {
     background-image: url("/dist/images/onda-azul.svg");
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: cover;
-    bottom: -1px;
+    background-size: contain;
+    bottom: -5px;
     left: 0px;
     // filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
+}
+
+@media (min-width:992px) {
+    #carouselAcquaParkIndicators .onda::after {       
+        background-size: cover;
+        bottom: -1px;
+    }
 }
 
 
@@ -566,7 +572,7 @@ body {
     background-color: #f7f7f7;
 }
 
-.btn {
+.btn, .btn:hover {
     color: $white;
 }
 
@@ -629,4 +635,48 @@ body {
     top: -40px;
     left: 0;
     
+}
+
+// WHATSAPP
+.chama-zap {
+    position: fixed;
+    padding: 12px;
+    top: 600px;
+    right: -165px;
+    width: 230px;
+    // height: 65px;
+    z-index: 9999;    
+    background-color: $success;
+    border-radius: .75rem 0 0 .75rem;   
+    transition: all .35s;
+    transition-timing-function: ease-in-out
+}
+
+.chama-zap:hover {
+    right: 0;
+    // background-color: $btn-success-hover-color;
+}
+
+.chama-zap a{
+    text-decoration: none;
+}
+
+.chama-zap i {
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    font-size: 50px;
+    float: left;
+    color: $white;
+}
+
+.chama-zap div {
+    position: relative;
+    display: flex;
+    text-align: left;
+    line-height: 1rem;
+    font-size: 14px;
+    color: $white;
+    float: rjight;
+    text-transform: uppercase;
 }

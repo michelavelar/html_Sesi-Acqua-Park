@@ -110,8 +110,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Gotham", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -6657,6 +6656,33 @@ body {
   margin-top: 125px;
 }
 
+progress {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: transparent;
+  z-index: 99999;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #ff0000, #FFBA3A, #ee5118, #980808, #E01915, #FFBA3A);
+  background-attachment: fixed;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #ff0000, #FFBA3A, #ee5118, #980808, #E01915, #FFBA3A);
+  background-attachment: fixed;
+}
+
 /* NAGEGACAO */
 #navegacao {
   margin: 0;
@@ -6859,17 +6885,11 @@ body {
   background-image: url("/dist/images/onda-azul.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: contain;
-  bottom: -5px;
+  background-size: cover;
+  bottom: -1px;
   left: 0px;
 }
 
-@media (min-width: 992px) {
-  #carouselAcquaParkIndicators .onda::after {
-    background-size: cover;
-    bottom: -1px;
-  }
-}
 .tns-controls [disabled] {
   color: #999999;
   background: #B3B3B3;
@@ -7171,7 +7191,7 @@ body {
   background-color: #f7f7f7;
 }
 
-.btn, .btn:hover {
+.btn {
   color: #fff;
 }
 
@@ -7226,47 +7246,6 @@ body {
   background-size: cover;
   top: -40px;
   left: 0;
-}
-
-.chama-zap {
-  position: fixed;
-  padding: 12px;
-  top: 600px;
-  right: -165px;
-  width: 230px;
-  z-index: 9999;
-  background-color: #27B3A7;
-  border-radius: 0.75rem 0 0 0.75rem;
-  transition: all 0.35s;
-  transition-timing-function: ease-in-out;
-}
-
-.chama-zap:hover {
-  right: 0;
-}
-
-.chama-zap a {
-  text-decoration: none;
-}
-
-.chama-zap i {
-  position: relative;
-  display: flex;
-  margin-right: 10px;
-  font-size: 50px;
-  float: left;
-  color: #fff;
-}
-
-.chama-zap div {
-  position: relative;
-  display: flex;
-  text-align: left;
-  line-height: 1rem;
-  font-size: 14px;
-  color: #fff;
-  float: rjight;
-  text-transform: uppercase;
 }
 
 .clearfix::after {

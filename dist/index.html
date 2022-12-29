@@ -64,7 +64,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap" rel="stylesheet">
-
+  <link href="/dist/fonts/gotham/gotham.css" rel="stylesheet">
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -81,10 +81,18 @@
 </head>
 
 <body>
-  
+
   <!-- scrool top -->
   <a id="scroll-top" href="#top"><button><i class="fa fa-chevron-up" aria-hidden="true"></i></button></a>
 
+  <div class="chama-zap shadow">
+    <a href="https://api.whatsapp.com/send?phone=5514996485478&text=Olá" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      <div>
+        Faça sua<br>Carteirinha.<br>Todo mundo pode!
+      </div>
+    </a>
+  </div>
   <!-- BARRA SESI -->
   <section id="navegacao" class="navegacao-portais fiesp">
     <div class="container-fluid">
@@ -127,14 +135,15 @@
 
   <nav class="navbar navbar-expand-lg mt-4 py-4 navbar-dark bg-dark fixed-top">
     <div class="container-xxl">
-      <a class="navbar-brand" href="https://www.sesisp.org.br" data-aos="fade" data-aos-duration="1000"><img src="images/logo-sesi-sp.png" alt=""></a>
+      <a class="navbar-brand" href="https://www.sesisp.org.br" data-aos="fade" data-aos-duration="1000"><img
+          src="images/logo-sesi-sp.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade" data-aos-duration="1000">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="#sobre" class="nav-link text-white text-uppercase">Home</a></li>
+          <li class="nav-item"><a href="#top" class="nav-link text-white text-uppercase">Home</a></li>
           <li class="nav-item"><a href="#parque" class="nav-link text-white text-uppercase">O Parque</a></li>
           <li class="nav-item"><a href="#mapa-cat" class="nav-link text-white text-uppercase">Mapa do Parque</a></li>
           <li class="nav-item"><a href="#calendario" class="nav-link text-white text-uppercase">Calendário</a></li>
@@ -147,9 +156,10 @@
 
   <main>
 
-    <div class="logo-acqua-park" >
+    <div class="logo-acqua-park">
       <h1 class="visually-hidden">Sesi Acqua Park</h1>
-      <img src="images/logo-acqua-park.svg" class="img-fluid" alt="logo Sesi Acqua Park" data-aos="zoom-in" data-aos-duration="750" data-aos-delay="500">
+      <img src="images/logo-acqua-park.svg" class="img-fluid" alt="logo Sesi Acqua Park" data-aos="zoom-in"
+        data-aos-duration="750" data-aos-delay="500">
     </div>
     <div class="cat-sesi" data-aos="fade-left" data-aos-duration="750" data-aos-delay="500">
       <img src="images/badge-cat-sesi-ourinhos.svg" class="img-fluid" alt="CAT Sesi Ourinhos">
@@ -160,9 +170,9 @@
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="2"
+        <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="3"
+        <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="3"
           aria-label="Slide 4"></button>
       </div>
 
@@ -197,11 +207,14 @@
     <section id="parque" class="ondas">
       <div class="container-fluid">
         <div class="row">
-          <H2 class="h1 text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-anchor-placement="center-bottom">Mergulhe nessa diversão</H2>
-          <p class="h4" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300" data-aos-anchor-placement="center-bottom">Piscinas, toboáguas, cascatas e jatos d`água</p>
+          <H2 class="h1 text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="50"
+            data-aos-anchor-placement="center-bottom">Mergulhe nessa diversão</H2>
+          <p class="h4" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300"
+            data-aos-anchor-placement="center-bottom">Piscinas, toboáguas, cascatas e jatos d`água</p>
         </div>
-        <div class="row" data-aos="fade" data-aos-duration="750" data-aos-offset="150" data-aos-delay="600" data-aos-anchor-placement="center-bottom">
-          <div class="my-slider" >
+        <div class="row" data-aos="fade" data-aos-duration="750" data-aos-offset="100" data-aos-delay="600"
+          data-aos-anchor-placement="center-bottom">
+          <div class="my-slider">
             <div><img src="images/sesi_1-Foto.png" class="img-fluid" alt=""></div>
             <div><img src="images/sesi_3-Foto.png" class="img-fluid" alt=""></div>
             <div><img src="images/sesi_4-Foto.png" class="img-fluid" alt=""></div>
@@ -222,24 +235,28 @@
       <div class="container-xxl">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-anchor-placement="center-bottom">SOBRE O SESI ACQUA PARK</h2>
+            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50"
+              data-aos-anchor-placement="center-bottom">SOBRE O SESI ACQUA PARK</h2>
           </div>
-          <div class="col-md-6 col-xl-5 offset-xl-1" data-aos="fade-right" data-aos-duration="750" data-aos-offset="100" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
+          <div class="col-md-6 col-xl-5 offset-xl-1" data-aos="fade-right" data-aos-duration="750" data-aos-offset="100"
+            data-aos-delay="300" data-aos-anchor-placement="center-bottom">
             <p>O SESI Acqua Park está esperando por você. </p>
             <p>Refresque seus dias! Piscinas, toboágua e jatos d’água em um ambiente perfeito para você curtir com a sua
               família! </p>
             <p>Aproveite toda a estrutura, benefícios e atividades oferecidos pelo Sesi Ourinhos. </p>
             <p>Quem faz a carteirinha SESI pode curtir todo este espaço.</p>
           </div>
-          <div class="col-md-6 col-xl-5 h-100" data-aos="fade-left" data-aos-duration="750" data-aos-offset="100" data-aos-delay="300"data-aos-anchor-placement="center-bottom">
+          <div class="col-md-6 col-xl-5 h-100" data-aos="fade-left" data-aos-duration="750" data-aos-offset="100"
+            data-aos-delay="300" data-aos-anchor-placement="center-bottom">
             <div class="box shadow">
               <h3 class="h2 text-uppercase">Detalhes Técnicos</h3>
-              <h4>PROFUNDIDADE DAS PISCINAS</h4> 
+              <h4>PROFUNDIDADE DAS PISCINAS</h4>
               <p><i class="fa-regular fa-arrows-up-down" aria-hidden="true"></i> 1,75 m</p>
               <h4>Tamanho</h4>
-              <p><i class="fa-regular fa-arrows-up-down-left-right" aria-hidden="true"></i> 574 m² • <i class="fa-regular fa-arrows-v"
-                  aria-hidden="true"></i> 1,75 m • <i class="fa-regular fa-arrows-h" aria-hidden="true"></i> 3,25 m</p>
-                  
+              <p><i class="fa-regular fa-arrows-up-down-left-right" aria-hidden="true"></i> 574 m² • <i
+                  class="fa-regular fa-arrows-v" aria-hidden="true"></i> 1,75 m • <i class="fa-regular fa-arrows-h"
+                  aria-hidden="true"></i> 3,25 m</p>
+
               <h4>Lista de Brinquedos</h4>
               <ul>
                 <li>List item</li>
@@ -257,30 +274,54 @@
       <div class="container-xxl">
         <div class="row">
           <div class="col-12">
-            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">MAPA DO CAT – CENTRO DE ATIVIDADES</h2>
-            <img src="images/mapa-cat-outinhos.png" class="img-fluid mx-auto w-100" alt="MAPA DO CAT – CENTRO DE ATIVIDADES" data-aos="fade-up" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">
+            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">MAPA
+              DO CAT – CENTRO DE ATIVIDADES</h2>
+            <img src="images/mapa-cat-outinhos.png" class="img-fluid mx-auto w-100"
+              alt="MAPA DO CAT – CENTRO DE ATIVIDADES" data-aos="fade-up" data-aos-duration="750" data-aos-offset="50"
+              data-aos-delay="300">
             <ol class="column">
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Entrada</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Meu Cão no Sesi</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Tenda de eventos</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Ginásio de Esportes</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Vestiários</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Academia</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Jardim Sensorial</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Praça de Eventos</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Quiosques</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Quadra de Areia</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Banheiros</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Piscinas</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Vestiários</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Salão de Eventos</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Espaço Zen</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Cantina</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Sala de Jogos</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Playground</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Campo de Futebol Society</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Quadras Poliesportivas</li>
-              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Quadra Poliesportiva Coberta</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Entrada</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Meu Cão no Sesi</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Tenda de eventos</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Ginásio de Esportes</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Vestiários</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Academia</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Jardim Sensorial</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Praça de Eventos</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Quiosques</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Quadra de Areia</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Banheiros</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Piscinas</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Vestiários</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Salão de Eventos</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Espaço Zen</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Cantina</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Sala de Jogos</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Playground</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Campo de Futebol Society</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Quadras Poliesportivas</li>
+              <li data-aos="flip-up" data-aos-duration="750" data-aos-offset="100"
+                data-aos-anchor-placement="center-bottom">Quadra Poliesportiva Coberta</li>
             </ol>
           </div>
         </div>
@@ -292,8 +333,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">Além de curtir o Sesi Acqua Park</h2>
-            <p class="h4" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">Piscinas, toboáguas, cascatas e jatos d`água</p>
+            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">Além
+              de curtir o Sesi Acqua Park</h2>
+            <p class="h4" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">Piscinas,
+              toboáguas, cascatas e jatos d`água</p>
           </div>
         </div>
         <div class="row" data-aos="fade" data-aos-duration="750" data-aos-offset="150" data-aos-delay="600">
@@ -332,16 +375,20 @@
       <div class="container-xxl">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">Calendário</h2>
-            <p class="text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50">
+              Calendário</h2>
+            <p class="text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-lg-4 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">
+          <div class="col-sm-6 col-lg-4 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="750"
+            data-aos-offset="50" data-aos-delay="300">
             <div id="flatpicker-calendario"></div>
           </div>
-          <div class="col-sm-6 col-lg-8" data-aos="fade-left" data-aos-duration="750" data-aos-offset="50" data-aos-delay="300">
+          <div class="col-sm-6 col-lg-8" data-aos="fade-left" data-aos-duration="750" data-aos-offset="50"
+            data-aos-delay="300">
             <div id="eventosSesi" class="p-3 mt-4 mt-md-0 overflow-auto rounded"
               style="background-color: #034798; max-height: 300px;">
               <!-- Concatenados aqui! -->
@@ -360,15 +407,18 @@
       <div class="container-xxl">
         <div class="row">
 
-          <div class="col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="100" data-aos-anchor-placement="center-bottom">
+          <div class="col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="100"
+            data-aos-anchor-placement="center-bottom">
             <img src="images/como-fazer-carteirinha.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-md-6" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-offset="100" data-aos-anchor-placement="center-bottom">
+          <div class="col-md-6" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-offset="100"
+            data-aos-anchor-placement="center-bottom">
             <h2 class="h1 text-uppercase mt-5">Como fazer sua carteirinha </h2>
             <p class="h4">Explicação simples dos planos</p>
-            <p class="mt-4"><a href="#" class="btn btn-primary btn-lg" data-aos="fade" data-aos-duration="750" data-aos-offset="200">Assistir</a> <a href="#"
-                class="btn btn-secondary btn-lg ms-3" data-aos="fade" data-aos-duration="750" data-aos-offset="200" data-aos-delay="300">Planos</a></p>
+            <p class="mt-4"><a href="#" class="btn btn-primary btn-lg" data-aos="fade" data-aos-duration="750"
+                data-aos-offset="200">Assistir</a> <a href="#" class="btn btn-secondary btn-lg ms-3" data-aos="fade"
+                data-aos-duration="750" data-aos-offset="200" data-aos-delay="300">Planos</a></p>
           </div>
 
         </div>
@@ -378,30 +428,44 @@
 
 
 
-
     <section id="day-use" class="ondas">
       <div class="container-xxl">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">Day use para grupos​</h2>
+            <h2 class="h1 text-uppercase text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="100"
+              data-aos-anchor-placement="center-bottom">Day use para grupos​</h2>
           </div>
-          <div class="col-md-4" >
-            <img src="images/day-use-empresas.png" class="img-fluid mb-3" alt="Solicite orçamento para Empresas" data-aos="zoom-out-right" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">
-            <h4 class="text-danger text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120" data-aos-anchor-placement="center-bottom" data-aos-delay="200">Empresas</h4>
-            <a href="" class="btn btn-danger mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150" data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
+
+          <div class="col-md-4">
+            <img src="images/day-use-empresas.png" class="img-fluid mb-3" alt="Solicite orçamento para Empresas"
+              data-aos="zoom-out-right" data-aos-duration="750" data-aos-offset="100"
+              data-aos-anchor-placement="center-bottom">
+            <h4 class="text-danger text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200">Empresas</h4>
+            <a href="" class="btn btn-danger mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
           </div>
           <div class="col-md-4">
-            <img src="images/day-use-melhor-idade.png" class="img-fluid mb-3" alt="Solicite orçamento para Melhor Idade" data-aos="zoom-out-down" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">
-            <h4 class="text-warning text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120" data-aos-anchor-placement="center-bottom" data-aos-delay="200">MELHOR IDADE</h4>
-            <a href="" class="btn btn-warning mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150" data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
+            <img src="images/day-use-melhor-idade.png" class="img-fluid mb-3" alt="Solicite orçamento para Melhor Idade"
+              data-aos="zoom-out-down" data-aos-duration="750" data-aos-offset="100"
+              data-aos-anchor-placement="center-bottom">
+            <h4 class="text-warning text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200">MELHOR IDADE</h4>
+            <a href="" class="btn btn-warning mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
           </div>
           <div class="col-md-4">
-            <img src="images/day-use-escola.png" class="img-fluid mb-3" alt="Solicite orçamento para Escolas" data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="100" data-aos-anchor-placement="center-bottom">
-            <h4 class="text-success text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120" data-aos-anchor-placement="center-bottom" data-aos-delay="200">ESCOLA</h4>
-            <a href="" class="btn btn-success mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150" data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
+            <img src="images/day-use-escola.png" class="img-fluid mb-3" alt="Solicite orçamento para Escolas"
+              data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="100"
+              data-aos-anchor-placement="center-bottom">
+            <h4 class="text-success text-uppercase" data-aos="fade" data-aos-duration="750" data-aos-offset="120"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200">ESCOLA</h4>
+            <a href="" class="btn btn-success mb-5" data-aos="fade" data-aos-duration="750" data-aos-offset="150"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="400">Solicite orçamento </a>
           </div>
           <div class="col-12 mb-5">
-            <p class="text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="120" data-aos-anchor-placement="center-bottom" data-aos-delay="200"><a href="#">Política para Grupos</a></h2>
+            <p class="text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="120"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200"><a href="#">Política para Grupos</a></h2>
           </div>
         </div>
       </div>
@@ -438,8 +502,7 @@
   <script src="/dist/js/flatpickr.js"></script>
   <script src="/dist/js/flatpickr-pt.js"></script>
 
-  <!-- Custom flatpickr JavaScript -->
-  <script src="/dist/js/custom_flatpickr.js"></script>
+
 
   <script>
     $("#eventosSesi").hide();
@@ -508,6 +571,9 @@
     });
 
   </script>
+
+  <!-- Custom flatpickr JavaScript -->
+  <script src="/dist/js/custom_flatpickr.js"></script>
 </body>
 
 </html>
