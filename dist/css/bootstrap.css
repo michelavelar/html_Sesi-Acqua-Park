@@ -7231,7 +7231,7 @@ body {
 .chama-zap {
   position: fixed;
   padding: 12px;
-  top: 600px;
+  top: 300px;
   right: -165px;
   width: 230px;
   z-index: 9999;
@@ -7241,9 +7241,9 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 740px) {
   .chama-zap {
-    top: 300px;
+    top: 600px;
   }
 }
 .chama-zap:hover {
