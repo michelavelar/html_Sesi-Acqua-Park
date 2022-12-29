@@ -20,6 +20,7 @@ body {
     list-style: none;
     line-height: normal;
     font-family: 'Source Sans Pro', sans-serif;
+    z-index: 2;
 }
 
 #navegacao a {
@@ -602,41 +603,6 @@ body {
 
 
 
-
-/* CONTATO */
-
-#contato {
-    padding: 60px 0;
-    background-color: $primary;
-    color: $white;
-
-}
-
-#contato.onda {
-    position: relative;
-}
-
-#contato.onda::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    min-height: 70px;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    background-image: url("/dist/images/onda-azul.svg");
-    // filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: -40px;
-    left: 0;
-    
-}
-
 // WHATSAPP
 .chama-zap {
     position: fixed;
@@ -649,7 +615,8 @@ body {
     background-color: $success;
     border-radius: .75rem 0 0 .75rem;   
     transition: all .35s;
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
+    z-index: 2;
 }
 
 @media(min-width: 740px) {
@@ -660,7 +627,6 @@ body {
 
 .chama-zap:hover {
     right: 0;
-    // background-color: $btn-success-hover-color;
 }
 
 .chama-zap a{
@@ -685,4 +651,60 @@ body {
     color: $white;
     float: rjight;
     text-transform: uppercase;
+}
+
+
+// FOOTER
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-primeira-linha {
+    background-color: #6e160c;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-bottom: 3px solid;
+}
+
+.footer-segunda-linha {
+    background: url('/dist/images/bg_footer.jpg')center #074a71;
+    background-size: 100% auto;
+    height: 102px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+@media (max-width:768px) {
+    .footer-segunda-linha {
+        height: 144px;
+    }
+}
+
+@media (max-width:480px) {
+    .footer-segunda-linha {
+        height: 145px;
+    }
+}
+
+.footer-tres-linha {
+    background-color: #BC1016;
+    font-style: normal;
+    color: #FFFFFF;
+    border-bottom: 3px solid;
+    
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(64, 64, 64, 0.8);
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
 }
