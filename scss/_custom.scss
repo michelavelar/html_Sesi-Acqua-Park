@@ -652,6 +652,12 @@ body {
     transition-timing-function: ease-in-out
 }
 
+@media(min-width: 500px) {
+    .chama-zap {
+        top: 300px;
+    }
+}
+
 .chama-zap:hover {
     right: 0;
     // background-color: $btn-success-hover-color;
