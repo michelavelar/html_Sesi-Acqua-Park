@@ -83,7 +83,8 @@
 <body>
 
   <!-- scrool top -->
-  <a id="scroll-top" href="#top" style="z-index: 2;"><button><i class="fa fa-chevron-up" aria-hidden="true"></i></button></a>
+  <a id="scroll-top" href="#top" style="z-index: 2;"><button><i class="fa fa-chevron-up"
+        aria-hidden="true"></i></button></a>
 
   <div class="chama-zap shadow">
     <a href="https://api.whatsapp.com/send?phone=5514996485478&text=Olá" target="_blank">
@@ -418,30 +419,125 @@
             <p class="h4">Explicação simples dos planos</p>
             <p class="mt-4"><a href="#" class="btn btn-primary btn-lg" data-aos="fade" data-aos-duration="750"
                 data-aos-offset="200">Assistir</a> <a href="#" class="btn btn-secondary btn-lg ms-3" data-aos="fade"
-                data-aos-duration="750" data-aos-offset="200" data-aos-delay="300" data-bs-toggle="modal" data-bs-target="#planosModal">Planos</a></p>
+                data-aos-duration="750" data-aos-offset="200" data-aos-delay="300" data-bs-toggle="modal"
+                data-bs-target="#planosModal">Planos</a></p>
           </div>
 
         </div>
       </div>
       </div>
     </section>
-<!-- Modal -->
-<div class="modal fade" id="planosModal" tabindex="-1" aria-labelledby="planosModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="planosModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="planosModal" tabindex="-1" aria-labelledby="planosModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="individual" class="card onda h-100 shadow">
+                    <div class="card-header bg-warning text-center border-0">
+                      <h3 class="h4 text-white mt-2">INDIVIDUAL</h3>
+                    </div>
+                    <div class="card-body p-xl-5">
+                      <h3 class="h4 text-warning text-center mt-3 mb-3">Plano Básico</h3>
+                      <div class="row">
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 56<sup>,00</sup></span>
+                          <span class="text-muted small">Público</span>
+                        </div>
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 34<sup>,00</sup></span>
+                          <span class="text-muted small">Trabalhador da indústria</span>
+                        </div>
+                      </div>
+                      <div class="card border-warning mt-4">
+                        <div class="card-body">
+                          <p class="card-text">Todos podem utilizar Acqua Park e dependências*.</p>
+                        </div>
+                      </div>
+
+                      <h3 class="h4 text-warning text-center mt-4 mb-3">Plano Total</h3>
+                      <div class="row">
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 187<sup>,00</sup></span>
+                          <span class="text-muted small">Público</span>
+                        </div>
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 165<sup>,00</sup></span>
+                          <span class="text-muted small">Trabalhador da indústria</span>
+                        </div>
+                      </div>
+                      <div class="card border-warning mt-4">
+                        <div class="card-body">
+                          <p class="card-text">Todos podem fazer todas as modalidades da academia e utilizar Acqua Park
+                            e dependências*.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="familia" class="card onda h-100 shadow mt-4 mt-md-0">
+                    <div class="card-header bg-primary text-center border-0">
+                      <h3 class="h4 text-white mt-2">FAMÍLIA</h3>
+                    </div>
+                    <div class="card-body p-xl-5">
+                      <h3 class="h4 text-primary text-center mt-3 mb-3">Plano Básico</h3>
+                      <div class="row">
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 100<sup>,00</sup></span>
+                          <span class="text-muted small">Público</span>
+                        </div>
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 66<sup>,00</sup></span>
+                          <span class="text-muted small">Trabalhador da indústria</span>
+                        </div>
+                      </div>
+                      <div class="card border-primary mt-4">
+                        <div class="card-body">
+                          <p class="card-text">Inclui casa + filhos até 21 anos;
+                            Todos podem utilizar Acqua Park e dependências*.</p>
+                        </div>
+                      </div>
+
+                      <h3 class="h4 text-primary text-center mt-4 mb-3">Plano Total</h3>
+                      <div class="row">
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 143<sup>,00</sup></span>
+                          <span class="text-muted small">Público</span>
+                        </div>
+                        <div class="col">
+                          <span class="h4 d-block mb-0">R$ 110<sup>,00</sup></span>
+                          <span class="text-muted small">Trabalhador da indústria</span>
+                        </div>
+                      </div>
+                      <div class="card border-primary mt-4">
+                        <div class="card-body">
+                          <p class="card-text">Inclui casa + filhos até 21 anos;
+                            Todos podem fazer todas as modalidades da academia e utilizar Acqua Park e dependências*.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="small mt-3">* Consulte regulamento de utilização</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
     <section id="day-use" class="ondas">
@@ -481,7 +577,8 @@
           </div>
           <div class="col-12 mb-5">
             <p class="text-center" data-aos="fade" data-aos-duration="750" data-aos-offset="120"
-              data-aos-anchor-placement="center-bottom" data-aos-delay="200"><a href="#">Política para Grupos</a></h2>
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#politicaModal">Política para Grupos</a></h2>
           </div>
         </div>
       </div>
@@ -489,91 +586,142 @@
     </section>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="politicaModal" tabindex="-1" aria-labelledby="politicaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header border-0 text-center px-xl-5 pt-xl-5">
+            <h3 class="h2 text-center">POLÍTICA PARA GRUPOS</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-xl-5">
+
+            <ul>
+              <li>Tarifa especial de day-use acima de 15 pessoas;</li>
+
+              <li>É permitido apenas 1 grupo por dia: </li>
+              <ul>
+                <li>Empresas: de terça a sábado;</li>
+                <li>Escolar e melhor idade: de terça a sexta;</li>
+              </ul>
+
+              <li>Lanches e refeições são contratados diretamente na cantina;</li>
+
+              <li>Agendamento conforme disponibilidade, com no mínimo 1 semana de antecedência;</li>
+
+              <li>Atividades personalizadas como esportes, gincanas etc. devem ser orçados de acordo com objetivo do
+                grupo, não incluso no day-use;</li>
+
+              <li>Grupo escolar (necessário 1 responsável a cada 10 crianças – day-use sem custo);</li>
+
+              <li>Empresas e grupos (1 day-use sem custo a cada 15 pagantes).</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
 
   </main>
-<footer style="overflow-x: hidden;" id="contato">
-        <div class="row">
-            <div class="col-12 h-md-50 w-100 footer-primeira-linha p-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 mt-0 pt-0">
-                            <div class="card bg-transparent border-0">
-                                <div class="row card-body">
-                                    <div class="col-sm-4">
-                                        <div tabindex="0" class="card-title text-white font-weight-bold" style="font-size:18px">SESI - Ourinhos</div>
-                                        <div>
-                                            <div tabindex="0" class="card-text text-white m-0">
-                                                Rua Professora Maria José Ferreira,  100 - Bairro das Crianças - Ourinhos/SP
+  <footer style="overflow-x: hidden;" id="contato">
+    <div class="row">
+      <div class="col-12 h-md-50 w-100 footer-primeira-linha p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 mt-0 pt-0">
+              <div class="card bg-transparent border-0">
+                <div class="row card-body">
+                  <div class="col-sm-4">
+                    <div tabindex="0" class="card-title text-white font-weight-bold" style="font-size:18px">SESI -
+                      Ourinhos</div>
+                    <div>
+                      <div tabindex="0" class="card-text text-white m-0">
+                        Rua Professora Maria José Ferreira, 100 - Bairro das Crianças - Ourinhos/SP
 
-                                                    <div tabindex="0" class="text-white d-inline">CEP:19910-075</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                            <div tabindex="0" class="text-white pt-1">Telefone: <strong>(14) 3302-3500</strong> </div>
-                                            <div tabindex="0" class="text-white pt-1">Whatsapp: <strong>(14) 99648-5478</strong> </div>
-                                            <p tabindex="0" class="card-text text-white pt-1">E-mail: <strong><a href="mailto:suourinhos@sesisp.org.br" target="_blank">suourinhos@sesisp.org.br</a></strong></p>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <p class="card-text m-0"><a href="http://www.sesisp.org.br/fale-conosco?unidade=36" target="_blank" class="text-white nav-link pl-0"><i class="fa fa-1x fa-comments"></i> FALE CONOSCO</a></p>
-                                        <p class="card-text m-0"><a href="https://sesisenaisp.jobs.recrut.ai/" target="_blank" class="text-white nav-link pl-0"><i class="fas fa-1x fa-user"></i> TRABALHE CONOSCO</a></p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <p class="card-text m-0"><a href="/imprensa" target="_blank" class="text-white nav-link pl-0"><i class="fa-1x fas fa-microphone"></i> IMPRENSA</a></p>
-                                        <p class="card-text m-0"><a href="http://www.sesisp.org.br/ouvidoria" target="_blank" class="text-white nav-link pl-0"><i class="fa-1x fas fa-phone-square"></i> OUVIDORIA</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div tabindex="0" class="text-white d-inline">CEP:19910-075</div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div tabindex="0" class="text-white pt-1">Telefone: <strong>(14) 3302-3500</strong> </div>
+                    <div tabindex="0" class="text-white pt-1">Whatsapp: <strong>(14) 99648-5478</strong> </div>
+                    <p tabindex="0" class="card-text text-white pt-1">E-mail: <strong><a
+                          href="mailto:suourinhos@sesisp.org.br" target="_blank">suourinhos@sesisp.org.br</a></strong>
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <p class="card-text m-0"><a href="http://www.sesisp.org.br/fale-conosco?unidade=36" target="_blank"
+                        class="text-white nav-link pl-0"><i class="fa fa-1x fa-comments"></i> FALE CONOSCO</a></p>
+                    <p class="card-text m-0"><a href="https://sesisenaisp.jobs.recrut.ai/" target="_blank"
+                        class="text-white nav-link pl-0"><i class="fas fa-1x fa-user"></i> TRABALHE CONOSCO</a></p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p class="card-text m-0"><a href="/imprensa" target="_blank" class="text-white nav-link pl-0"><i
+                          class="fa-1x fas fa-microphone"></i> IMPRENSA</a></p>
+                    <p class="card-text m-0"><a href="http://www.sesisp.org.br/ouvidoria" target="_blank"
+                        class="text-white nav-link pl-0"><i class="fa-1x fas fa-phone-square"></i> OUVIDORIA</a></p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-12">
-                <div class="card bg-transparent footer-segunda-linha border-0">
-                    <div class="container">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-10 col-sm-10 col-lg-10 text-uppercase form-inline">
-                                    <div class="row w-100">
-                                        <div class="col-md-3 col-lg-3">
-                                            <a title="Institucional" href="/institucional" target="_self">Institucional</a>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3">
-                                            <a title="Transmissao On-lime" href="http://www.sesisp.org.br/transmissao-online" target="_self">Transmissão On-Line</a>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3">
-                                            <a title="Pagina de Editora" href="https://www.sesispeditora.com.br/" target="_self">Editora SESI-SP</a>
-                                        </div>
-                                        <div class="col-md-3 col-lg-3">
-                                            <a title="Consulta ao Acervo" href="http://acervo.sesisp.org.br/pergamum/biblioteca/index.php" target="_self">Consulta ao Acervo</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-2">
-                                    <div class="col-md-12 ">
-                                            <p class="card-text d-inline mr-4"><a href="http://www.facebook.com/SesiOurinhos" target="_blank"><i class="fab fa-2x fa-facebook text-white"></i><span class="d-none">Icone Facebook</span></a></p>
-                                            <p class="card-text d-inline ml-4"><a href="https://www.instagram.com/sesiourinhos/" target="_blank"><i class="card-text fab fa-2x fa-instagram text-white"></i><span class="d-none">Icone Instagram</span></a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <div class="col-12 text-center footer-tres-linha">
-                <p class="p-2">
-                    <small tabindex="0">
-                        Copyright <span id="dataAno"></span> © Todos os direitos reservados. - <small>SP2</small>
-                    </small>
-                </p>
-            </div>
+          </div>
         </div>
-    </footer>
- 
+      </div>
+      <div class="col-12">
+        <div class="card bg-transparent footer-segunda-linha border-0">
+          <div class="container">
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-lg-10 text-uppercase form-inline">
+                  <div class="row w-100">
+                    <div class="col-md-3 col-lg-3">
+                      <a title="Institucional" href="/institucional" target="_self">Institucional</a>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                      <a title="Transmissao On-lime" href="http://www.sesisp.org.br/transmissao-online"
+                        target="_self">Transmissão On-Line</a>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                      <a title="Pagina de Editora" href="https://www.sesispeditora.com.br/" target="_self">Editora
+                        SESI-SP</a>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                      <a title="Consulta ao Acervo" href="http://acervo.sesisp.org.br/pergamum/biblioteca/index.php"
+                        target="_self">Consulta ao Acervo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2">
+                  <div class="col-md-12 ">
+                    <p class="card-text d-inline mr-4"><a href="http://www.facebook.com/SesiOurinhos" target="_blank"><i
+                          class="fab fa-2x fa-facebook text-white"></i><span class="d-none">Icone Facebook</span></a>
+                    </p>
+                    <p class="card-text d-inline ml-4"><a href="https://www.instagram.com/sesiourinhos/"
+                        target="_blank"><i class="card-text fab fa-2x fa-instagram text-white"></i><span
+                          class="d-none">Icone Instagram</span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center footer-tres-linha">
+        <p class="p-2">
+          <small tabindex="0">
+            Copyright <span id="dataAno"></span> © Todos os direitos reservados. - <small>SP2</small>
+          </small>
+        </p>
+      </div>
+    </div>
+  </footer>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous">
   </script>
@@ -596,7 +744,7 @@
 
   <!-- Custom flatpickr JavaScript -->
   <script src="/dist/js/custom_flatpickr.js"></script>
-  
+
   <script>
     $("#eventosSesi").hide();
 
@@ -669,7 +817,7 @@
   </script>
 
 
-  
+
 </body>
 
 </html>

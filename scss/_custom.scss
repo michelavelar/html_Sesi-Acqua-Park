@@ -2,10 +2,12 @@
 // font-family: 'Mitr', sans-serif;
 html {
     font-family: 'Mitr', sans-serif !important;
+    
 }
 
 body {
     margin-top: 125px;
+    color: $gray-600;
 }
 
 
@@ -707,4 +709,34 @@ footer a:hover {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+}
+
+/* MODAL */
+
+#individual.onda {
+    position: relative;
+}
+
+#individual.onda::after, #familia.onda::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    min-height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 37px;
+    left: 0;
+}
+
+#individual.onda::after {
+    background-image: url("/dist/images/onda-laranja.svg");
+}
+
+#familia.onda::after {
+    background-image: url("/dist/images/onda-azul-modal.svg");
 }
