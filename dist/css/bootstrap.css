@@ -7203,15 +7203,14 @@ body {
 .chama-zap {
   position: fixed;
   padding: 12px;
-  top: 300px;
+  bottom: 30px;
   right: -165px;
   width: 230px;
-  z-index: 9999;
   background-color: #27B3A7;
   border-radius: 0.75rem 0 0 0.75rem;
   transition: all 0.35s;
   transition-timing-function: ease-in-out;
-  z-index: 2;
+  z-index: 999999;
 }
 
 @media (min-width: 740px) {
