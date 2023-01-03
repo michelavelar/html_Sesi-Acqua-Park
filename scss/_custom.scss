@@ -619,7 +619,7 @@ body {
     border-radius: .75rem 0 0 .75rem;   
     transition: all .35s;
     transition-timing-function: ease-in-out;
-    z-index: 999999;
+    z-index: 99;
 }
 
 @media(min-width: 740px) {
@@ -731,7 +731,7 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 37px;
+    top: 32px;
     left: 0;
 }
 
@@ -741,4 +741,10 @@ footer a:hover {
 
 #familia.onda::after {
     background-image: url("../images/onda-azul-modal.svg");
+}
+
+@media (min-width:768px) {
+    #individual.onda::after, #familia.onda::after {
+        top: 36px;
+    }
 }
