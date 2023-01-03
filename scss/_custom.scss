@@ -612,7 +612,8 @@ body {
     bottom: 30px;
     right: -165px;
     width: 230px;
-    // height: 65px;    
+    // height: 65px;
+    z-index: 9999;    
     background-color: $success;
     border-radius: .75rem 0 0 .75rem;   
     transition: all .35s;
@@ -622,7 +623,8 @@ body {
 
 @media(min-width: 740px) {
     .chama-zap {
-        top: 600px;
+        top: 75vh;
+        bottom:auto;
     }
 }
 

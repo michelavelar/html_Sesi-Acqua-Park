@@ -7206,6 +7206,7 @@ body {
   bottom: 30px;
   right: -165px;
   width: 230px;
+  z-index: 9999;
   background-color: #27B3A7;
   border-radius: 0.75rem 0 0 0.75rem;
   transition: all 0.35s;
@@ -7215,7 +7216,8 @@ body {
 
 @media (min-width: 740px) {
   .chama-zap {
-    top: 600px;
+    top: 75vh;
+    bottom: auto;
   }
 }
 .chama-zap:hover {
