@@ -222,7 +222,7 @@ body {
     width: 100%;
     min-height: 70px;
     background-color: transparent;
-    background-image: url("/dist/images/onda-azul.svg");
+    background-image: url("../images/onda-azul.svg");
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -345,7 +345,7 @@ body {
     width: 100%;
     height: 300px;
     background-color: transparent;
-    background-image: url("/dist/images/ondas.svg");
+    background-image: url("../images/ondas.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -392,7 +392,7 @@ body {
     width: 100%;
     min-height: 70px;
     background-color: transparent;
-    background-image: url("/dist/images/onda-branca.svg");
+    background-image: url("../images/onda-branca.svg");
     // filter: invert(100%) sepia(11%) saturate(21%) hue-rotate(359deg) brightness(116%) contrast(94%);
     background-position: center;
     background-repeat: no-repeat;
@@ -471,7 +471,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    background-image: url("/dist/images/onda-verde.svg");
+    background-image: url("../images/onda-verde.svg");
     // filter: invert(61%) sepia(66%) saturate(474%) hue-rotate(126deg) brightness(94%) contrast(90%);    
     background-position: center;
     background-repeat: no-repeat;
@@ -518,7 +518,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    background-image: url("/dist/images/onda-azul.svg");
+    background-image: url("../images/onda-azul.svg");
     // filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -555,7 +555,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    background-image: url("/dist/images/onda-azul.svg");
+    background-image: url("../images/onda-azul.svg");
     // filter: invert(40%) sepia(77%) saturate(6440%) hue-rotate(194deg) brightness(89%) contrast(95%);
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
@@ -594,7 +594,7 @@ body {
     width: 100%;
     height: 300px;
     background-color: transparent;
-    background-image: url("/dist/images/ondas.svg");
+    background-image: url("../images/ondas.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -675,7 +675,7 @@ footer a:hover {
 }
 
 .footer-segunda-linha {
-    background: url('/dist/images/bg_footer.jpg')center #074a71;
+    background: url('../images/bg_footer.jpg')center #074a71;
     background-size: 100% auto;
     height: 102px;
     text-align: center;
@@ -734,9 +734,9 @@ footer a:hover {
 }
 
 #individual.onda::after {
-    background-image: url("/dist/images/onda-laranja.svg");
+    background-image: url("../images/onda-laranja.svg");
 }
 
 #familia.onda::after {
-    background-image: url("/dist/images/onda-azul-modal.svg");
+    background-image: url("../images/onda-azul-modal.svg");
 }
