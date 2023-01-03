@@ -5871,7 +5871,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 45%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -5938,9 +5938,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 45%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 45%;
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -6808,12 +6808,11 @@ body {
 .logo-acqua-park {
   position: absolute;
   display: inline-block;
-  width: 100%;
-  min-height: 210px;
   padding-left: 20px;
   top: 140px;
   left: 0;
   z-index: 999;
+  border: 1px solid red;
 }
 
 .logo-acqua-park img {
