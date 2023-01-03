@@ -6832,10 +6832,6 @@ body {
   width: 40vw;
 }
 
-.nav-link {
-  font-size: 1rem;
-}
-
 /* RESPONSIVE */
 @media (min-width: 992px) {
   .logo-acqua-park img {

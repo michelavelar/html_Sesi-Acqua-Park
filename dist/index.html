@@ -82,7 +82,7 @@
 
 <body>
 
-  <!-- scrool top -->
+  <!-- scrool top --> 
   <a id="scroll-top" href="#top" style="z-index: 2;"><button><i class="fa fa-chevron-up"
         aria-hidden="true"></i></button></a>
 
@@ -136,7 +136,7 @@
 
   <nav class="navbar navbar-expand-lg mt-4 py-4 navbar-dark bg-dark fixed-top">
     <div class="container-xxl">
-      <a class="navbar-brand" href="https://www.sesisp.org.br" data-aos="fade" data-aos-duration="1000"><img
+      <a class="navbar-brand" href="https://www.sesisp.org.br" target="_blank" data-aos="fade" data-aos-duration="1000"><img
           src="images/logo-sesi-sp.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -162,9 +162,10 @@
       <img src="images/logo-acqua-park.svg" class="img-fluid" alt="logo Sesi Acqua Park" data-aos="zoom-in"
         data-aos-duration="750" data-aos-delay="500">
     </div>
-    <div class="cat-sesi" data-aos="fade-left" data-aos-duration="750" data-aos-delay="500">
+    <div class="cat-sesi" data-aos="fade-down" data-aos-duration="750" data-aos-delay="500">
       <img src="images/badge-cat-sesi-ourinhos.svg" class="img-fluid" alt="CAT Sesi Ourinhos">
     </div>
+
     <div id="carouselAcquaParkIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselAcquaParkIndicators" data-bs-slide-to="0" class="active"
@@ -395,8 +396,7 @@
               <!-- Concatenados aqui! -->
             </div>
           </div>
-        </div>
-      </div>
+        </div> 
       </div>
     </section>
 
@@ -422,9 +422,7 @@
                 data-aos-duration="750" data-aos-offset="200" data-aos-delay="300" data-bs-toggle="modal"
                 data-bs-target="#planosModal">Planos</a></p>
           </div>
-
-        </div>
-      </div>
+        </div> 
       </div>
     </section>
 
@@ -484,7 +482,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div id="familia" class="card onda h-100 shadow mt-4 mt-md-0">
+                  <div id="familia" class="card onda shadow mt-4 mt-md-0">
                     <div class="card-header bg-primary text-center border-0">
                       <h3 class="h4 text-white mt-2">FAMÍLIA</h3>
                     </div>
@@ -530,7 +528,7 @@
                 </div>
               </div>
             </div>
-            <p class="small mt-3">* Consulte regulamento de utilização</p>
+            <p class="small mt-4 mt-md-3">* Consulte regulamento de utilização</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
@@ -581,7 +579,6 @@
               <a href="#" data-bs-toggle="modal" data-bs-target="#politicaModal">Política para Grupos</a></h2>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -803,6 +800,11 @@
       arrowKeys: true,
       autoHeight: true,
       responsive: {
+        400: {
+          edgePadding: 10,
+          gutter: 30,
+          items: 1
+        },
         640: {
           edgePadding: 10,
           gutter: 30,
