@@ -24,6 +24,18 @@ $(document).ready(function () {
 
 });
  
+// nav-link indo pro lugar certo no celular e no desktop
+$(".nav-link").click(function() {
+  var offsetTop = 100;
+  
+    if ($(window).width() <= 576) {
+      offsetTop -= 15;
+    }
+  
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top - offsetTop },'slow');
+  });
+
 // Collapse responsive navbar when toggler is visible
 const navbarToggler = document.body.querySelector('.navbar-toggler');
 const responsiveNavItems = [].slice.call(
