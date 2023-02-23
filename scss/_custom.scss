@@ -660,6 +660,21 @@ body {
     text-transform: uppercase;
 }
 
+.ico-play{
+    position:absolute;
+    display: block;
+    left: calc(50% - 80px);
+    top: calc(50% - 50px);
+}
+.ico-play a {
+  color: #fff;
+    opacity: .5;
+    &:hover {
+        opacity: .8;
+    }
+} 
+
+
 
 // FOOTER
 footer a {

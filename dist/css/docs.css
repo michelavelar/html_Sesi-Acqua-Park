@@ -592,7 +592,7 @@
 
 @media (max-width: 991.98px) {
   .DocSearch-Button-Keys,
-.DocSearch-Button-Placeholder {
+  .DocSearch-Button-Placeholder {
     display: none;
   }
 }
@@ -806,7 +806,7 @@
 }
 @media (max-width: 991.98px) {
   .bd-content > .table.table-bordered,
-.bd-content > .table-responsive .table.table-bordered {
+  .bd-content > .table-responsive .table.table-bordered {
     border: 0;
   }
 }
@@ -2341,7 +2341,7 @@
 }
 @media (min-width: 768px) {
   .bd-clipboard,
-.bd-edit {
+  .bd-edit {
     display: block;
   }
 }
