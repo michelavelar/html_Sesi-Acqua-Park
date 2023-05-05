@@ -7252,7 +7252,7 @@ body {
 .ico-play {
   position: absolute;
   display: block;
-  left: calc(50% - 80px);
+  left: calc(50% - 20px);
   top: calc(50% - 50px);
 }
 
