@@ -170,9 +170,11 @@ p {
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -2015,7 +2017,9 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 1rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2040,6 +2044,10 @@ progress {
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
 }
+.form-control::-moz-placeholder {
+  color: #ced4da;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #ced4da;
   opacity: 1;
@@ -2051,7 +2059,8 @@ progress {
 .form-control::file-selector-button {
   padding: 0.675rem 1.25rem;
   margin: -0.675rem -1.25rem;
-  margin-inline-end: 1.25rem;
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2099,7 +2108,8 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
-  margin-inline-end: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
 
 .form-control-lg {
@@ -2116,7 +2126,8 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
-  margin-inline-end: 1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
 }
 
 textarea.form-control {
@@ -2168,7 +2179,9 @@ textarea.form-control-lg {
   border: 1px solid #ced4da;
   border-radius: 1rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-select {
@@ -2245,8 +2258,11 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  appearance: none;
-  print-color-adjust: exact;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -2340,7 +2356,9 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .form-range:focus {
   outline: 0;
@@ -2361,11 +2379,14 @@ textarea.form-control-lg {
   background-color: #EF9F3B;
   border: 0;
   border-radius: 1rem;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
+    -webkit-transition: none;
     transition: none;
   }
 }
@@ -2387,11 +2408,14 @@ textarea.form-control-lg {
   background-color: #EF9F3B;
   border: 0;
   border-radius: 1rem;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
+    -moz-transition: none;
     transition: none;
   }
 }
@@ -2451,9 +2475,16 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 1.25rem;
 }
+.form-floating > .form-control::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+  color: transparent;
+}
 .form-floating > .form-control::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
@@ -2469,6 +2500,10 @@ textarea.form-control-lg {
 .form-floating > .form-select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
@@ -2792,7 +2827,9 @@ textarea.form-control-lg {
   text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -5162,7 +5199,9 @@ textarea.form-control-lg {
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   opacity: 0.25;
 }
 
@@ -5208,6 +5247,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
+  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -6639,14 +6679,17 @@ textarea.form-control-lg {
   }
 }
 .placeholder-wave {
-  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-  mask-size: 200% 100%;
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+          mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
   100% {
-    mask-position: -200% 0%;
+    -webkit-mask-position: -200% 0%;
+            mask-position: -200% 0%;
   }
 }
 html {
@@ -6673,8 +6716,6 @@ body {
 }
 
 #navegacao a {
-  -webkit-transition: all ease 0.25s;
-  -moz-transition: all ease 0.25s;
   transition: all ease 0.25s;
 }
 
@@ -6791,8 +6832,6 @@ body {
 
 .navegacao-portais .midias-sociais.instagram a:hover {
   background: #cc2366;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
@@ -6935,8 +6974,6 @@ body {
   display: block;
   font-family: tahoma;
   font-size: 11px;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
   transition: 1s;
 }
 
@@ -6951,8 +6988,6 @@ body {
   text-align: center;
   color: #fff;
   background: #066EC7;
-  background: -moz-linear-gradient(180deg, #066EC7 0%, #044277 50%);
-  background: -webkit-linear-gradient(180deg, #066EC7 0%, #044277 50%);
   background: linear-gradient(180deg, #066EC7 0%, #044277 50%);
 }
 
@@ -6979,8 +7014,6 @@ body {
 #sobre {
   padding: 210px 0 100px;
   color: #fff;
-  background: -moz-linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
-  background: -webkit-linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
   background: linear-gradient(180deg, #25C7BA 0%, #1A9CAD 50%);
 }
 
@@ -7047,18 +7080,22 @@ body {
 }
 
 #mapa-cat .column {
-  column-count: 1;
-  column-gap: 40px;
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 @media (min-width: 767px) {
   #mapa-cat .column {
-    column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
 @media (min-width: 992px) {
   #mapa-cat .column {
-    column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
   }
 }
 /* CURTA O SESI ACQUA PARTK */
@@ -7090,16 +7127,16 @@ body {
   left: 0;
 }
 
-.my-slider-2 {
+.swiper-2 {
   text-align: left;
 }
 
-.my-slider-2 div {
+.swiper-2 div {
   width: 300px;
 }
 
 @media (min-width: 767px) {
-  .my-slider-2 div {
+  .swiper-2 div {
     width: 480px;
   }
 }
@@ -7124,7 +7161,6 @@ body {
   margin: 0;
   background-color: transparent;
   background-image: url("../images/onda-azul.svg");
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   background-position: center;
   background-repeat: no-repeat;
@@ -7137,8 +7173,6 @@ body {
 #carteirinha {
   padding: 90px 0;
   background: #F4D400;
-  background: -moz-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
-  background: -webkit-linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
   background: linear-gradient(270deg, #F4D400 0%, #E68C26 100%);
   color: #fff;
 }
@@ -7157,7 +7191,6 @@ body {
   margin: 0;
   background-color: transparent;
   background-image: url("../images/onda-azul.svg");
-  -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -8965,15 +8998,21 @@ OPS
 }
 
 .user-select-all {
-  user-select: all !important;
+  -webkit-user-select: all !important;
+     -moz-user-select: all !important;
+          user-select: all !important;
 }
 
 .user-select-auto {
-  user-select: auto !important;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+          user-select: auto !important;
 }
 
 .user-select-none {
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
 }
 
 .pe-none {
@@ -11576,4 +11615,4 @@ OPS
   .d-print-none {
     display: none !important;
   }
-}
+}/*# sourceMappingURL=bootstrap.css.map */
